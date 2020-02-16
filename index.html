@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasker - The Task Managing App</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="black">
+        <div id="text">
+            <span class="ltr">L</span>
+            <span class="ltr">O</span>
+            <span class="ltr">A</span>
+            <span class="ltr">D</span>
+            <span class="ltr">I</span>
+            <span class="ltr">N</span>
+            <span class="ltr">G</span>
+        </div>
+    </div>
+
+    <div id="modal">
+        <span id="modalCross" class="cross">
+            <i class="fa fa-times"></i>
+        </span>
+        <input id="taskName" type="text" placeholder="Task Name">
+        <textarea id="taskDetails" placeholder="Bring Back My Laptop..."></textarea>
+        <button id="taskDone">Save The Task</button>
+    </div>
+
+    <div id="topScreen">
+        <div class="container">
+            <h2><span class="bold">Minimal Tasker</span> for Minimal Personalities</h2>
+            <small>The Task Manager for remembering your tasks and making them happen with helping you burden less about your stuff, this application works without database and uses your system memory resource in order to remember your data.</small>
+            <div id="actions">
+                <div id="add" class="actnIcn">
+                    <span class="ring">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                    <h6>Add A Task</h6>
+                </div>
+                <div id="delete" class="actnIcn">
+                    <span class="ring">
+                        <i class="fa fa-trash"></i>
+                    </span>
+                    <h6>Remove All</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultScreen">
+        <div class="cont">
+            <h2 onclick="dclick(0)">Tasks, You've Saved Till Now.</h2>
+            <div class="tasksContainer">
+                <small>No Tasks Added Till Now</small>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="scr.js"></script>
+    <script src="fnc.js"></script>
+</body>
+</html>
